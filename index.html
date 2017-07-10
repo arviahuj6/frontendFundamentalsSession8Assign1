@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<!-- Start of HTML -->
+<html>
+
+<!-- Start of Head -->
+<head>
+
+<!-- Start of Title -->
+<title>Registration Form</title>
+
+<!-- Start of CSS Styling -->
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+#desc {
+    width: 1300px;
+    height: 300px;
+    overflow: scroll;
+}
+p {
+	font-size:25px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:italic;
+	color:rgb(148, 101, 44);	
+	word-spacing:8px;
+	letter-spacing: 1px;
+	text-align:justify;
+	padding:0 10px 0 10px;
+}
+h1 {
+	font-family:"MS Serif", "New York", serif;
+	font-style:italic;
+	color:#f4363d;	
+}
+h2 {
+	font-family:"MS Serif", "New York", serif;
+	font-style:italic;
+	color:#fff;	
+}
+
+#main-wrapper{
+	background-image:url(background.jpg);
+}
+
+
+</style>
+<!-- End of CSS Styling -->
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<!-- End Head -->
+
+<!-- Start Body -->
+<body>
+<div id="main-wrapper">
+
+	<!-- Start Header -->
+		<header style="padding:10px; border:1px solid !important;">        
+        <!-- Start Navbar -->
+        <div>         
+            <nav>  
+            	<ul>            
+                  <li><a href="#">LOGO</a></li>
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">About us </a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              	</ul>
+            </nav>
+        </div> 
+        <!--End Navbar -->           
+            
+		</header>
+        <!-- End Header -->
+        <br>
+        
+        <!-- Page Heading -->
+        <div>
+        <h1 style="text-align:center"><u>Registration Form</u></h1>
+		</div>
+        
+        <!--Start of Form-->
+        <div id="background" style="margin-left:auto; margin-right:auto;">
+			<p id="enter">Enter the system</p>
+			<p id="text-under-enter">It is necessary to login in Your account in order to sign up for a course.</p>
+			<div id="left-column" >
+				<p id="are-you-new">Are you new? <span>Register</span></p>
+								
+				<form method="post">
+					
+					<input type="text"
+					class="text-field"
+					name="user-name"
+					placeholder="User name"
+					required="required"/>	
+					
+					<br><br>
+					
+					<input type="email"
+					class="text-field"
+					name="user-email"
+					placeholder="Email"
+					required="required"/>
+					
+					<br><br>
+					
+					<input type="password"
+					class="text-field"
+					name="user-password"
+					placeholder="Password"
+					required="required"/>
+					
+					<br><br>
+					
+					<input type="password"
+					class="text-field"
+					name="user-password"
+					placeholder="Confirm Password"
+					required="required"/>
+					
+					<br><br>
+					
+					<input type="submit"
+					class="button"
+					id="reg-button"
+					value="Register"/>
+				
+				</form>			
+				
+			</div>
+			
+			<div id="right-column">
+				
+				<p id="student">already a student? login</p>
+				
+				<!--In case you want to see the changes appearing in the URL
+					you may change the form method to "get" instead of "post"-->
+				
+				<form method="post">
+					
+					<input type="text"
+					class="text-field"
+					name="user-name"
+					placeholder="User name"
+					required="required"
+					style="width: 340px"/>
+					
+					<br><br>
+					
+					<input type="password"
+					class="text-field"
+					name="user-password"
+					placeholder="Password"
+					required="required"
+					style="width: 340px"/>
+					
+					<br><br>
+					
+					<input type="checkbox"
+					name="remember-me"
+					id="remember-checkbox"/>
+					
+					<label for="remember-checkbox"
+					id="remember-me-label">Remember me?</label>
+					
+					<input type="submit"
+					class="button"
+					id="login-button"
+					value="Login"/>
+					
+				</form>
+				
+				<p id="forgot-pwd">Forgot Password?</p>
+				
+			</div>
+			
+			
+		</div>
+        <!-- Javascript Start -->
+	<script>
+         var addTo=function(outer)
+         {
+         	 var add=function(inner)
+         	 {
+         	 	return outer+inner;
+         	 }
+         	  return add;
+         };
+
+         var addthree=new addTo(3);
+          console.dir(addthree);
+          console.log(addthree(4));
+
+
+	  </script>
+		<!-- Javascript End -->
+</body>
+</html>
